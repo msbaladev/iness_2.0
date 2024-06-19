@@ -9,16 +9,16 @@ export const Header = () => {
       <header
         className={`flex justify-center   sticky top-0 z-10 items-center   `}
       >
-        <section className="card_backdrop h-16  flex items-center justify-evenly space-x-4 w-3/4 rounded-full mt-2 ">
+        <section className="card_backdrop bg-gray-600 h-16  flex items-center justify-evenly space-x-4 w-3/4 rounded-full mt-2 ">
         <div className="flex justify-center items-center px-2">
           <img
             src="https://inesssolutions.com/newmenu/inesslogo.png"
             className="w-8 h-8"
             alt="logo"
           />
-          <h1 className="text-white ml-2 font-bold">INESS</h1>
+          <h1 className="text-black ml-2 font-bold">INESS</h1>
         </div>
-        <div className=" px-6 py-1 rounded-full  space-x-4 text-sm text-white flex sm:hidden">
+        <div className=" px-6 py-1 rounded-full  space-x-4 text-sm text-black flex sm:hidden">
           <Link
             href="services"
             activeClass="active"

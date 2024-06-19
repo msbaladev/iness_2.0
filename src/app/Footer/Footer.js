@@ -207,7 +207,7 @@ const Footer = () => {
         </video> */}
 
 
-        <img src="https://i.ibb.co/BTxsxDP/wave-haikei-2.png" className="w-full h-full"/>
+        {/* <img src="https://i.ibb.co/BTxsxDP/wave-haikei-2.png" className="w-full h-full"/> */}
       </div>
       </footer>
     </>
