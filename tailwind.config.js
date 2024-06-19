@@ -6,6 +6,12 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: { min: "0px", max: "480px" },
+      md: { min: "481px", max: "768px" },
+      lg: { min: "769px", max: "1279px" },
+      xl: "1280px",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
