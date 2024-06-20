@@ -1,9 +1,11 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Header = () => {
+  const router=useRouter()
   return (
     <>
       <header
@@ -16,9 +18,9 @@ export const Header = () => {
             className="w-8 h-8"
             alt="logo"
           />
-          <h1 className="text-black ml-2 font-bold">INESS</h1>
+          <h1 onClick={()=>router.push("/")} className="text-black ml-2 font-bold cursor-pointer">INESS</h1>
         </div>
-        <div className=" px-6 py-1 rounded-full  space-x-4 text-sm text-black flex sm:hidden">
+        <div className=" px-6 py-1 rounded-full  space-x-4 text-sm text-black flex sm:hidden md:hidden lg:hidden">
           <Link
             href="services"
             activeClass="active"

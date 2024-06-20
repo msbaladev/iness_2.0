@@ -11,7 +11,7 @@ function LandingPage() {
     <section className="relative min-h-screen w-full text-black bg ">
       <Header />
 
-      <div className=" relative min-h-screen ">
+      <div className=" relative min-h-screen sm:hidden">
         <h1 className="circle w-52 h-52 rounded-full absolute bottom-16 left-20 "></h1>
 
         <h1 className="circle w-52 h-52 rounded-full absolute right-12"></h1>
@@ -22,7 +22,7 @@ function LandingPage() {
           <h5 className="text-lg text-center">WE ARE HERE FOR YOU!!!</h5>
           <h1 className="text-4xl xl:text-6xl font-bold text-center ">
             Providing best & <br />
-            <span className="text-7xl">growth solutions</span>
+            <span className="text-7xl text-center">growth solutions</span>
           </h1>
           <div className="flex items-center justify-center">
             {/* <button className="bg-black py-2 px-12 rounded-full">Click</button> */}
