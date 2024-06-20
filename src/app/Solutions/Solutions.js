@@ -161,7 +161,7 @@ function Solutions() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#002233]  text-white space-y-4 flex flex-col justify-evenly rounded-t-[20px] ">
+    <div className="relative min-h-screen bg-[#002233] text-white space-y-4 flex flex-col justify-evenly  ">
       <div className="">
         {/* <h1 className="text-center text-xl font-bold p-2 ">Solutions</h1> */}
 

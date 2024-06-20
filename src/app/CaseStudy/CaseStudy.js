@@ -10,21 +10,20 @@ import { IoArrowForwardOutline } from "react-icons/io5";
 
 const CaseStudy = () => {
   return (
-    <div className=" bg-gradient-to-r from-fuchsia-600 to-indigo-300">
-      <section className="min-h-screen relative ">
-        <h5 className="font-medium text-3xl p-4 flex ">
+    <div className=" bg card_backdrop">
+      <h5 className="font-medium text-3xl p-4 flex  ">
           <span className="mr-5">
             {" "}
             <IoArrowForwardOutline />{" "}
           </span>
           Case Study
         </h5>
-        <div className=" flex flex-col gap-2  min-h-screen  justify-center items-center">
-          <div className="w-3/4">
-            <AccordionUsage />
-          </div>
+
+      <div className=" flex justify-center items-center min-h-screen gap-4 p-2 ">
+        <div className="w-3/4">
+          <AccordionUsage />
         </div>
-      </section>
+      </div>
     </div>
   );
 };

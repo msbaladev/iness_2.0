@@ -17,7 +17,7 @@ const Footer = () => {
     - @tailwindcss/forms
 */}
 
-      <footer className="relative ">
+      <footer className="relative bg ">
         <div className="mx-auto  max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8  ">
         
         
