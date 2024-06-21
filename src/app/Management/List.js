@@ -19,30 +19,53 @@ function List() {
     {
       id: 1,
       title: "Capabilities of Commodity Management Tool",
-      first_line: "BOM Scrub activity.",
+      one: "Single Tool to handle multiple stakeholders like Commodity Managers, Management, Contract Manufacturer, Suppliers & Distributors..",
+      two:"Automated RFQ.",
+      three:"Ability to manage Customer-owned and Contract Manufacturer owned parts quote details. ",
+      four:"A platform for Price Benchmarking.",
+      five:"BOM cost comparison concerning historical cost."
+   
     },
     {
       id: 2,
       title: "PCN & EOL Management",
-      first_line:
-        "Categorize the PCN to Design change and Process change for the action plan.",
+      one:"Categorize the PCN to Design change and Process change for the action plan. ",
+      two:"Engage with Suppliers for the qualification report and sample for qualification based on the changes. ",
+      three:"Support qualification plan of the components.",
+      four:"Proactive action for the EOL components and mitigate the risk. ",
+      five:"An alternate suggestion for the EOL parts."
     },
     {
       id: 3,
       title: "BOM Risk Management",
+      one:"BOM Scrub activity. ",
+      two:"Obsolescence Management.",
+      three:"Prioritize the action plan.",
+      four:"Break down the BOM to High, Medium, Low Risk & Potential risk.",
+      five:"Optimize inventory & avoid cost interruptions."
     },
     {
       id: 4,
       title: "Integrated Quality Management System (IQuMS)",
+      one:"A centralized closed-loop system with end to end tracking of quality issues.",
+      two:"Adherence to Quality processes – Checklists, Test/debug report validation. ",
+      three:"Integrated Supplier corrective action request (SCAR).",
+      four:"Executive Level cockpit views and User level dashboards.",
+      five:"Independent database with multi-peer support. Less data traffic. "
     },
     {
       id: 5,
       title: "Claims Management",
+      one:"Single Platform to manage various types of Manufacturer claims (Reval, Freight & PPV) with multiple stakeholders secured login options.  ",
+      two:"Customized & Well-defined process for each claim with predefined input requirements.  ",
+      three:"Ability to generate various types of discrepancy reports (Price variance, Stock on Hand Variance, Demand Variance, Duplicate claim, Invalid calculation). ",
+      four:"Easy approval/rejection process through automated suggestion with E2E tracking ability.",
+      five:"Provide better decision-making to Claim Approver through the validation summary. "
     },
   ];
   return (
     <section className="mih-h-screen relative  ">
-      <div className="   w-[1080px] lg:w-[800px] md:w-[500px] sm:w-[400px]  ">
+      <div className="   w-[800px] lg:w-[800px] md:w-[500px] sm:w-[400px] ">
         <Swiper
           className=""
           spaceBetween={50}
@@ -61,56 +84,50 @@ function List() {
           loop={true}
           modules={[Autoplay, Pagination, Navigation, EffectCreative]}
         >
-          {data.map(({id}) => (
+          {data.map(({id,title,one,two,three,four,five}) => (
             <SwiperSlide key={id}>
-              <section className="   text-black card_backdrop rounded-xl ">
-                <div className="p-6 flex flex-col justify-evenly ">
+              <section className="   text-  rounded-xl     ">
+                <div className="p-6 flex flex-col justify-evenly  ">
                   <div>
                     {/* <img
        src="https://img.freepik.com/free-vector/share-business-dividend-calculation-percentage-ratio-contribution-size-deposit-amount-accounting-audit-shareholders-cartoon-characters_335657-1217.jpg"
        className="w-20 h-20 rounded-full"
        alt="service"
      /> */}
-                    <RiDoubleQuotesL size={70} />
+                    <RiDoubleQuotesL size={40} />
                   </div>
                   <h1 className="text-4xl font-bold  ml-6">
-                    BOM risk Management
+                    {title}
                   </h1>
-                  <div className="my-auto mt-12 ml-6 md:text-xs sm:text-xs ">
+                  <div className="my-auto mt-12 ml-6 md:text-xs sm:text-xs p-4   ">
                     <div className="flex flex-col  space-y-4 h-full">
                       <h6 className=" text- flex ">
                         {" "}
                         <span>
                           <GiBullseye size={20} className="mr-2 ml-2" />
                         </span>{" "}
-                        Single Tool to handle multiple stakeholders like
-                        Commodity Managers, Management, Contract Manufacturer,
-                        Suppliers & Distributors.
+                        {one}
                       </h6>
                       <h6 className="  flex ">
                         {" "}
                         <span>
                           <GiBullseye size={20} className="mr-2 ml-2" />
                         </span>{" "}
-                        Adherence to Quality processes – Checklists, Test/debug
-                        report validation.
+                       {two}
                       </h6>
                       <h6 className="  flex ">
                         {" "}
                         <span>
                           <GiBullseye size={20} className="mr-2 ml-2" />
                         </span>{" "}
-                        Break down the BOM to High, Medium, Low Risk & Potential
-                        risk.
+                       {three}
                       </h6>
                       <h6 className="  flex ">
                         {" "}
                         <span>
                           <GiBullseye size={20} className="mr-2 ml-2" />
                         </span>{" "}
-                        Single Platform to manage various types of Manufacturer
-                        claims (Reval, Freight & PPV) with multiple stakeholders
-                        secured login options.
+                       {four}
                       </h6>
 
                       <h6 className="  flex ">
@@ -118,9 +135,7 @@ function List() {
                         <span>
                           <GiBullseye size={20} className="mr-2 ml-2" />
                         </span>{" "}
-                        Single Platform to manage various types of Manufacturer
-                        claims (Reval, Freight & PPV) with multiple stakeholders
-                        secured login options.
+                       {five}
                       </h6>
                     </div>
                   </div>
