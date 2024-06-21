@@ -7,8 +7,11 @@ import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import AccordionUsage from "./CaseStudyList";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 const CaseStudy = () => {
+  const router = useRouter();
+
   return (
     <div className="min-h-screen relative">
       <h5 className="font-bold text absolute  text-3xl p-4 flex">
@@ -29,13 +32,22 @@ const CaseStudy = () => {
 
         <div className="space-y-4">
           <h1>MULTIPLATFORM</h1>
-          <h1 className="text-4xl font-bold"> Hive brings all your video platforms together</h1>
+          <h1 className="text-4xl font-bold">
+            {" "}
+            Hive brings all your video platforms together
+          </h1>
           <h6 className="text-xl">
-            Put an end to disconnected communication tools.<br /> Hive supports the
-            use of multiple video platforms, simultaneously.
+            Put an end to disconnected communication tools.
+            <br /> Hive supports the use of multiple video platforms,
+            simultaneously.
           </h6>
 
-          <button className="bg-green-600 py-2 px-6 rounded-lg">case study</button>
+          <button
+            onClick={() => router.push("case-study")}
+            className="bg-green-600 py-2 px-6 rounded-lg"
+          >
+            case study
+          </button>
         </div>
       </div>
     </div>

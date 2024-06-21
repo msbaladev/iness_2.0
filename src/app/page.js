@@ -5,10 +5,11 @@ import Management from "./Management/Management";
 import AboutUs from "./About/AboutUs";
 import Leadership from "./Leadership/Leadership";
 import CaseStudy from "./CaseStudy/CaseStudy";
+import Solutions from "./Solutions/Solutions";
 
 import Footer from "./Footer/Footer";
 
-import Solutions from "./Solutions/Solutions";
+
 import Service from "./Services/Service";
 // import { Header } from "./Navbar/Header";
 

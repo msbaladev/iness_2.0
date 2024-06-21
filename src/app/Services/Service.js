@@ -106,7 +106,7 @@ function Service() {
       </div> */}
 
      
-<h5 className="font-medium text-3xl p-4 flex tracking-wider space-y-12">
+<h5 className="font-bold text-3xl p-4 flex xl:absolute  space-y-12">
           <span className="mr-5">
             {" "}
             <IoArrowForwardOutline />{" "}
@@ -141,7 +141,7 @@ function Service() {
             <div
               key={id}
                 onClick={() => setdata_id(id)}
-              className="p-4  cursor-pointer text-start flex justify-evenly items-center h-28 sm:h-20 w-80 lg:w-64 font-bold rounded-lg bg-white  border-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
+              className="p-4  cursor-pointer text-start flex justify-evenly items-center h-28 sm:h-20 w-80 lg:w-64 font-bold rounded-lg bg-white hover:bg-gray-200 border-gradient-to-r from-pink-500 via-red-500 to-yellow-500"
             >
               <h1 className="flex flex-col justify-center  h-full ">
                 {" "}
