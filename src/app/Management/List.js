@@ -61,8 +61,8 @@ function List() {
           loop={true}
           modules={[Autoplay, Pagination, Navigation, EffectCreative]}
         >
-          {data.map(() => (
-            <SwiperSlide>
+          {data.map(({id}) => (
+            <SwiperSlide key={id}>
               <section className="   text-black card_backdrop rounded-xl ">
                 <div className="p-6 flex flex-col justify-evenly ">
                   <div>
