@@ -5,7 +5,7 @@ import AboutUs from "./About/AboutUs";
 import Management from "./Management/Management";
 import Solutions from "./Solutions/Solutions";
 // import CaseStudy from "./CaseStudy/CaseStudy";
- import Leadership from "./Leadership/Leadership";
+import Leadership from "./Leadership/Leadership";
 import Footer from "./Footer/Footer";
 // import { Header } from "./Navbar/Header";
 
@@ -16,14 +16,15 @@ export default function Home() {
       <AboutUs />
 
       <Management />
+      
 
       <Leadership />
-     {/*  <CaseStudy />*/}
-     <Solutions />  
+      {/* <CaseStudy /> */}
+      <Solutions />
 
       <Service />
-      
-      <Footer /> 
+
+      <Footer />
     </div>
   );
 }
