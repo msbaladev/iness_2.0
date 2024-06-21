@@ -26,7 +26,7 @@ function LandingPage() {
           </h1>
           <div className="flex items-center justify-center">
             {/* <button className="bg-black py-2 px-12 rounded-full">Click</button> */}
-            <div className="bg-white/20 w-12 border-2  border-gradient-to-r from-slate-200 to-gray-900 h-12 flex items-center  justify-center rounded-full">
+            <div className="bg-white/20 w-12 border-2  cursor-pointer border-gradient-to-r from-slate-200 to-gray-900 h-12 flex items-center  justify-center rounded-full">
               <FaPlayCircle
                 color="white"
                 size={30}

@@ -4,6 +4,10 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 .card_backdrop{
     background: rgba( 255, 255, 255, 0.2 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -118,4 +122,21 @@ body{
   background-image:
   radial-gradient(at 21% 64%, hsla(240,22%,23%,1) 0px, transparent 50%),
   radial-gradient(at 79% 30%, hsla(266,34%,29%,1) 0px, transparent 50%);
+}
+
+
+.bg_for_management{
+  background-color:hsla(0,31%,95%,1);
+  background-image:
+  radial-gradient(at 88% 20%, hsla(240,56%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 23% 90%, hsla(266,75%,71%,1) 0px, transparent 50%);
+}
+
+
+
+.bg_for_leader{
+  background-color:hsla(0,31%,95%,1);
+background-image:
+radial-gradient(at 88% 20%, hsla(240,55%,13%,1) 0px, transparent 50%),
+radial-gradient(at 21% 70%, hsla(270,76%,14%,1) 0px, transparent 50%);
 }

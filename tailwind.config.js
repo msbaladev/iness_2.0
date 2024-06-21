@@ -19,6 +19,18 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+
+    fontFamily: {
+      roboto: ["Roboto Condensed", "sans-serif"],
+      // Anton: ["Andika", "sans - serif"],
+      // Rubik: ["Rubik Bubbles", "cursive"],
+      Carter: ["Carter One", "cursive"],
+      One: ["Fredoka One", "cursive"],
+      Titan: ["Titan One", "cursive"],
+      Fugaz: ["Fugaz One", "cursive"],
+       Merienda:[ 'Merienda', 'cursive'],
+      
+    },
   },
   plugins: [],
 };
