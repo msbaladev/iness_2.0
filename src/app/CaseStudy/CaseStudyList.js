@@ -14,22 +14,22 @@ export default function AccordionUsage() {
   };
 
   return (
-    
-      <div className=" space-y-2   ">
+    <div className="  grid grid-cols-2 gap-4 place-items-center place-content-center ">
+      <div className=" space-y-4 flex flex-col justify-evenly">
         <Accordion
-          className="  py-1 rounded-2xl card_backdrop "
+          className="  py-2 rounded-2xl card_backdrop  "
           expanded={openPanel === "panel1"}
           onChange={() => handleAccordionChange("panel1")}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon className="  text-xl" />}
+            expandIcon={<ExpandMoreIcon className="  text-xl study_text" />}
             aria-controls="panel1-content"
             id="panel1-header"
             className=""
           >
             <h1 className="text-xl font-bold"> PCN-EOL management</h1>
           </AccordionSummary>
-          <AccordionDetails className="space-y-4">
+          <AccordionDetails className="space-y-4  ">
             <div className=" ">
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold">Customer Challenges</h3>
@@ -82,7 +82,7 @@ export default function AccordionUsage() {
         </Accordion>
 
         <Accordion
-          className="card_backdrop text-black py-1 rounded-2xl"
+          className="card_backdrop  py-2 rounded-2xl study_text"
           expanded={openPanel === "panel2"}
           onChange={() => handleAccordionChange("panel2")}
         >
@@ -144,7 +144,7 @@ export default function AccordionUsage() {
         </Accordion>
 
         <Accordion
-          className="card_backdrop  py-1"
+          className="card_backdrop  py-2  rounded-2xl"
           expanded={openPanel === "panel3"}
           onChange={() => handleAccordionChange("panel3")}
         >
@@ -203,7 +203,9 @@ export default function AccordionUsage() {
             </div>
           </AccordionDetails>
         </Accordion>
+      </div>
 
+      <div className=" space-y-4 flex flex-col justify-evenly">
         <Accordion
           className="card_backdrop py-1 rounded-2xl "
           expanded={openPanel === "panel4"}
@@ -279,7 +281,7 @@ export default function AccordionUsage() {
         </Accordion>
 
         <Accordion
-          className="card_backdrop py-1"
+          className="card_backdrop py-1 rounded-2xl"
           expanded={openPanel === "panel5"}
           onChange={() => handleAccordionChange("panel5")}
         >
@@ -363,7 +365,7 @@ export default function AccordionUsage() {
         </Accordion>
 
         <Accordion
-          className="card_backdrop  py-1"
+          className="card_backdrop  py-2 rounded-2xl"
           expanded={openPanel === "panel6"}
           onChange={() => handleAccordionChange("panel6")}
         >
@@ -418,6 +420,6 @@ export default function AccordionUsage() {
           </AccordionDetails>
         </Accordion>
       </div>
-   
+    </div>
   );
 }

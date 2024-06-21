@@ -21,7 +21,7 @@
 
 
   .bg_custom{
-    background-image: url('../../public/images/bg_2.png');
+    background-image: url('https://img.freepik.com/premium-photo/business-people-meeting-discussion-plans-young-men-work-working-office-concept-modern-office_116317-4112.jpg');
     background: no-repeat;
   }
 
@@ -139,4 +139,9 @@ body{
 background-image:
 radial-gradient(at 88% 20%, hsla(240,55%,13%,1) 0px, transparent 50%),
 radial-gradient(at 21% 70%, hsla(270,76%,14%,1) 0px, transparent 50%);
+}
+
+
+.study_text{
+  color: white;
 }

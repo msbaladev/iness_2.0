@@ -1,12 +1,15 @@
 import Image from "next/image";
 import LandingPage from "./LandingPage/LandingPage";
-import Service from "./Services/Service";
-import AboutUs from "./About/AboutUs";
 import Management from "./Management/Management";
-import Solutions from "./Solutions/Solutions";
-// import CaseStudy from "./CaseStudy/CaseStudy";
+
+import AboutUs from "./About/AboutUs";
 import Leadership from "./Leadership/Leadership";
+import CaseStudy from "./CaseStudy/CaseStudy";
+
 import Footer from "./Footer/Footer";
+
+import Solutions from "./Solutions/Solutions";
+import Service from "./Services/Service";
 // import { Header } from "./Navbar/Header";
 
 export default function Home() {
@@ -16,13 +19,12 @@ export default function Home() {
       <AboutUs />
 
       <Management />
-      
 
       <Leadership />
-      {/* <CaseStudy /> */}
-      <Solutions />
+      <CaseStudy />
+       <Solutions />
 
-      <Service />
+     <Service />
 
       <Footer />
     </div>
