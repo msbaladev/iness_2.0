@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="mx-auto  max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8  ">
         
         
-          <div className="card_backdrop rounded-xl">
+          <div className=" rounded-xl">
           <div className="mx-auto max-w-md ">
             <strong className="block text-center text-xl font-bold mt-6 text-gray-900 sm:text-3xl">
               Want us to email you with the latest blockbuster news?
@@ -30,9 +30,9 @@ const Footer = () => {
 
           <div className="mt-16 grid grid-cols-1 xl">
             <div className="mx-auto max-w-sm lg:max-w-none xl:max-w-xl"></div>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:text-left xl:grid-cols-4 place-content-center place-items-center">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 lg:text-left xl:grid-cols-4 place-content-center place-items-center">
               <div className="space-y-3">
-                <h1 className="font-medium ">USA-California</h1>
+                <h1 className="font-bold ">USA-California</h1>
 
                 <div className="text-sm space-y-1">
                   <h4> InESS Solutions, Inc.</h4>
@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
 
               <div className="space-y-3">
-                <h1 className="font-medium ">India-Bangalore </h1>
+                <h1 className="font-bold ">India-Bangalore </h1>
 
                 <div className="text-sm space-y-1">
                   <h4>InESS Global Solutions (P) Ltd,</h4>
@@ -94,7 +94,7 @@ const Footer = () => {
               </div>
 
               <div className="space-y-3">
-                <h1 className="font-medium ">India-Chennai </h1>
+                <h1 className="font-bold ">India-Chennai </h1>
 
                 <div className="text-sm space-y-1">
                   <h4>InESS Global Solutions (P) Ltd,</h4>
@@ -123,7 +123,7 @@ const Footer = () => {
               </div>
 
               <div className="space-y-3">
-                <h1 className="font-medium ">India-Karaikal</h1>
+                <h1 className="font-bold ">India-Karaikal</h1>
 
                 <div className="text-sm space-y-1">
                   <h4>InESS Global Solutions (P) Ltd,</h4>
