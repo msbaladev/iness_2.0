@@ -65,7 +65,8 @@ export const Header = () => {
                   d="m19.5 8.25-7.5 7.5-7.5-7.5"
                 />
               </svg>
-            </span>{" "}
+            </span>
+            
           </Link>
           <Link href="/" className="text-xl">Projects</Link>
           <Link href="/" className="text-xl">Industries</Link>
