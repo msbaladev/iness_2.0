@@ -18,7 +18,7 @@ export default function ServiceList({
 }) {
   return (
     <>
-      <div className="shadow-sm  h-72 flex flex-col justify-evenly rounded-xl space-x-4  ">
+      <div key={id} className="shadow-sm  h-72 flex flex-col justify-evenly rounded-xl space-x-4  ">
         <img src={url} className="w-20 h-20 ml-4 bg-gray-200 rounded-full object-contain" />
         <h1 className="text-2xl font-bold ">{title}</h1>
         <p className="w-4/5">
