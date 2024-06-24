@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import ServiceList from "./ServiceList";
 
-
 const ServiceCard = ({ icon, title, description, linkText }) => {
   return (
     <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
@@ -13,7 +12,9 @@ const ServiceCard = ({ icon, title, description, linkText }) => {
       <div>
         <div className="text-xl font-medium text-black">{title}</div>
         <p className="text-gray-500">{description}</p>
-        <a href="#" className="text-indigo-500 hover:text-indigo-600">{linkText}</a>
+        <a href="#" className="text-indigo-500 hover:text-indigo-600">
+          {linkText}
+        </a>
       </div>
     </div>
   );
@@ -121,51 +122,48 @@ function Service() {
 
       </div> */}
 
-     
-<h5 className="font-bold text-3xl p-4 flex xl:  space-y-12">
-          <span className="mr-5">
+      <h5 className="font-bold text-3xl p-4 flex xl:  space-y-12">
+        <span className="mr-5">
+          {" "}
+          <IoArrowForwardOutline />{" "}
+        </span>
+        Solutions & Services
+      </h5>
+
+      <div className=" py-10">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-6xl font-bold text-gray-900">
             {" "}
-            <IoArrowForwardOutline />{" "}
-          </span>
-          Solutions & Services
-        </h5>
-      
-
-        <div className=" py-10">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-6xl font-bold text-gray-900">  Detailing Services</h1>
-        <p className="mt-4 text-gray-600">
-        It is a long established fact that a reader will be distracted by <br /> the readable content of a page when looking at its layout.
-        </p>
-     
+            Detailing Services
+          </h1>
+          <p className="mt-4 text-gray-600">
+            It is a long established fact that a reader will be distracted by{" "}
+            <br /> the readable content of a page when looking at its layout.
+          </p>
+        </div>
       </div>
-    </div>
 
-
-        {/* <div className="  min-h-screen "> */}
-        {/* <img  src="https://inesssolutions.com/newmenu/inesslogo.png" className=" w-52 h-52 absolute bottom-60 left-52 lg:hidden "/> */}
-{/* 
+      {/* <div className="  min-h-screen "> */}
+      {/* <img  src="https://inesssolutions.com/newmenu/inesslogo.png" className=" w-52 h-52 absolute bottom-60 left-52 lg:hidden "/> */}
+      {/* 
       </div> */}
 
-
       <div className="grid xl:grid-cols-3 place-items-center place-content-center w-full sm:grid-cols-1 lg:grid-cols-2  gap-2 ">
-     {data.map(({url,title})=>(
-       <ServiceList
-       id={data[data_id - 1].id}
-       title={title}
-       url={url}
-       one={data[data_id - 1].one}
-       two={data[data_id - 1].two}
-       three={data[data_id - 1].three}
-       four={data[data_id - 1].four}
-       five={data[data_id - 1].five}
-     />
-     ))}
-      
-    
+        {data.map(({ id, url, title }) => (
+          <div key={id}>
+            <ServiceList
+              id={id}
+              title={title}
+              url={url}
+              one={data[data_id - 1].one}
+              two={data[data_id - 1].two}
+              three={data[data_id - 1].three}
+              four={data[data_id - 1].four}
+              five={data[data_id - 1].five}
+            />
+          </div>
+        ))}
 
-       
-      
         {/* <div className="lg:hidden sm:hidden  md:hidden">
          
 
